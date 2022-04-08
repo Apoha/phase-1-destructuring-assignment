@@ -1,6 +1,23 @@
 const farmAnimals = 'cow horse sheep pig chicken';
 
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ');
+
+const [bessie, ,dolly, babe, little] = farmAnimals.split(' ');
+
+const [blackAndWhite,  , black, pink,] = farmAnimals.split(' ');
+
+
+
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+
+const [r, o, y, g, b, , v] = colors;
+
+const [ , , , , , indg, ] = colors;
+
+
+
 
 const muppet = {
   muppetName: 'Miss Piggy',
@@ -9,6 +26,23 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+
+const{muppetName, color, song, job, partner} = muppet;
+
+
+
+/*it("Object: uses destructuring to assign songs 2 and 4, and Kermit's job and partner", () => {
+  expect(song2).to.exist
+  expect(song2).to.equal("Moving Right Along")
+  expect(song4).to.exist
+  expect(song4).to.equal("I Hope That Something Better Comes Along")
+  expect(nestedJob).to.exist
+  expect(nestedJob).to.equal("Host of The Muppet Show")
+  expect(nestedPartner).to.exist
+  expect(nestedPartner).to.equal("Miss Piggy")
+})*/
+
+
 
 const nestedMuppet = {
   nestedName: 'Kermit',
@@ -24,6 +58,18 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+
+
+const {song2, song4} = nestedMuppet.album.theMuppetMovie;
+const{nestedJob, nestedPartner} = nestedMuppet;
+
+
+
+
+
+
+
+
 
 // Strings
 
